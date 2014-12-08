@@ -8,13 +8,11 @@
 namespace XpathHelper;
 
 /**
- * Pseudo-parser for XPath expressions.
+ * XPath expressions namespacer.
  *
  * When a DOMDocument has a default namespace it's not possible to parse it
- * using XPath unless the namespace is registered as something else.
- *
- * This takes an XPath expression, /div/li/[@id = "list"] and turns it into
- * /prefix:div/prefix:li[@id = "list"]
+ * using XPath unless the namespace is registered as something else. This class
+ * provides two methods for working around this limitation.
  */
 class Namespacer {
 
