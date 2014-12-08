@@ -82,7 +82,7 @@ class Namespacer {
    * Localizes an XPath expression.
    *
    * Converts an expression from //div/a to
-   * //*[local-name() "div"]/*[local-name() "a"].
+   * //*[local-name() = "div"]/*[local-name() = "a"].
    *
    * @param string $xpath
    *   The XPath expression to prefix.
